@@ -7,7 +7,7 @@ const multer = require('multer')
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
-mongoose.connect("mongodb+srv://sourabhamohite2812:wXzbwlWssiEAjJL1@cluster0.m7awpol.mongodb.net/shubham-22" , {useNewUrlParser: true})
+mongoose.connect("mongodb+srv://saurabhdigambar8:X1UED3V4eKh2u9M4@cluster0.tlt0rzr.mongodb.net/Product_Management" , {useNewUrlParser: true})
 .then(()=> console.log("MongoDB is connected"))
 .catch((err)=> err.message)
 

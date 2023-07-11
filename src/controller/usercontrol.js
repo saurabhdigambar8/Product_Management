@@ -37,7 +37,7 @@ const login = async function(req,res){
         let Token = jwt.sign({
             userId : checkEmail._id
         },
-        "Shubham_key",
+        "Saurabh_key",
         {expiresIn : "100d"},
         { iat: Date.now()}
         )

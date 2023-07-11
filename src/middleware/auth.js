@@ -17,7 +17,7 @@ const authorize = async function(req,res,next){
         // console.log(Token)
         if(!Token) {return res.status(401).send({status: false, message: "Token is not present" })}
 
-        jwt.verify(Token, "Shubham_key" , async (error,decode) => {
+        jwt.verify(Token, "Saurabh_key" , async (error,decode) => {
             if(error) {res.status(400).send({status: false, message: "Token is not valid"})}
         else{
             req.userId = decode.userId
